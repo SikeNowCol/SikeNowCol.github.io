@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SPA PIAC TEST</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 <header class="header">
     <ul class="Header-links-ul">
         <li class="header-link" id="about-link">About Me</li>
         <li class="header-link" id="contact-link">Contact</li>
+        <li class="header-link" id="gallery-link">Gallery</li>
     </ul>
     <button id="theme-toggle">Toggle Theme</button>
 </header>
@@ -19,6 +21,12 @@
     <h1 class="title">Hello World!</h1>
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
 </main>
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <button class="close-btn" id="closeBtn">Zamknij</button>
+        <img id="modalImg" src="" alt="Full view">
+    </div>
+</div>
 <script src="js/router.js"></script>
 </body>
 </html>
