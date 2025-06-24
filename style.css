@@ -6,24 +6,9 @@ html, body {
     padding: 0;
     width: 100%;
 }
-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.Header-links-ul {
-    width: 60%;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-}
-.header-link {
-    padding: 0.4rem;
-    border-radius: 2px;
-    cursor: pointer;
-}
-.header-link:hover {
-    border-bottom: 1px solid white;
+.container {
+    margin: auto;
+    text-align: center;
 }
 main {
     padding: 2rem;
@@ -31,66 +16,63 @@ main {
 }
 .title {
     font-size: 3rem;
+    animation: fadeIn 2s ease-in-out;
 }
-body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-.dark-mode header {
-    background-color: #1e1e1e;
+.row{
+    padding: 40px;
 }
-.dark-mode .header-link:hover {
-    border-bottom: 1px solid #ffffff;
+.row > p1
+{
+    padding: 40px;
 }
-h1 {
-    margin-bottom: 20px;
+input
+{
+    width: 5%;
+    text-align: justify;
 }
-.gallery {
+#gallery
+{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    grid-template-columns: auto auto;
 }
-.thumb {
-    min-height: 100px;
-    background: #ccc;
-    width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    cursor: pointer;
+#gallery img
+{
+    width: 50%;
+    margin-bottom: 10%;
+    align-self: center;
 }
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
+#gallery p1
+{
+    font-family: Arial, serif;
+    text-align: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 90px;
 }
-.modal-content {
-    position: relative;
-    max-width: 90%;
-    max-height: 90%;
-    z-index: 1001;
+.container #janusz
+{
+    width: 40%;
+    margin-bottom: 10%;
+    align-self: center;
 }
-.modal-content img {
-    width: 100%;
-    height: auto;
+.container #seba
+{
+    width: 30%;
+    margin-bottom: 10%;
+    align-self: center;
 }
-.close-btn {
-    position: absolute;
-    top: -40px;
-    right: 0;
-    background: red;
-    color: white;
-    padding: 8px 12px;
-    border: none;
-    cursor: pointer;
-}
-.thumb:not(img) {
-    min-height: 100px;
-    background: #ccc;
+a.button {
+    text-decoration: none;
+    color: inherit;
 }
