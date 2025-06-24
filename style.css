@@ -50,6 +50,7 @@ input
     width: 50%;
     margin-bottom: 10%;
     align-self: center;
+    min-width: 100px;
 }
 #gallery p1
 {
@@ -58,19 +59,21 @@ input
     height: 100%;
     margin: 0;
     padding: 0;
-    font-size: 90px;
+    font-size: 700%;
 }
 .container #janusz
 {
     width: 40%;
     margin-bottom: 10%;
     align-self: center;
+    min-width: 100px;
 }
 .container #seba
 {
     width: 30%;
     margin-bottom: 10%;
     align-self: center;
+    min-width: 100px;
 }
 a.button {
     text-decoration: none;
